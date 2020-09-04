@@ -1,0 +1,26 @@
+body{
+    background: darkblue;
+}
+
+.container{
+    /* height: 100vh; */ /* 100 del dispositivo, el espacio dispnible */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-auto-rows: 3fr; filas adicionales */
+    align-content: center; /* alinear verticalmente */
+    gap: 10px;
+    height: 500px;
+}
+
+
+.box{
+    color: darkblue;
+    background: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+.box1{
+    grid-column: 1/3;
+    grid-row: 2/4;
+}

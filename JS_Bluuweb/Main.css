@@ -1,0 +1,58 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #FFE200;
+}
+
+#titulo{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 80px;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.container div{
+    text-align: left;
+    height: 200px;
+    width: 1845px;
+}
+
+.ejercicio{
+    border: 2px black solid;
+    font-weight: bold;
+    transition: 0.3s linear;
+}
+
+.ejercicio:hover{
+    border: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+    background-color:#FFE200;
+    color: black;
+    padding: 14px 25px;
+    border-radius: 15px;
+    margin-left: 50%;
+}
+
+.container h3{
+    margin-top: 85px;
+    margin-right: 250px;
+    text-align: right;
+}
+
+.ej9{
+    background-image: url(/JS_Bluuweb/Buscador/1.png);
+}

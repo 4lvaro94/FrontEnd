@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+
+}
+
+body{
+    background: whitesmoke;
+}
+
+.container{
+    background: darkblue;
+    width: 80%;
+    /* height: 500px; */
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: space-around;
+    /* flex-wrap: wrap; respeta el Alto y ancho 
+    flex-wrap: posiciona elementos dentro de la misma linea*/ 
+    /* justify-content: center; alinea horizontalmente */
+   /*  justify-content: space-around; */ /* genera espacio entre los hijos */
+    /* align-items: center; */ /* alinea verticalmente */
+    /* align-items: stretch; */ /* LOS ELEMENTOS OCUPAN EL 100% DEL ALTO  - quitar altura*/
+    /* align-content: center; funciona con 2 o mas row, Space-between: espaciado centrak, 
+    space-around: genera espaciado arriba y abajo */
+
+
+}
+
+.hijo{
+    background: whitesmoke;
+    width: 200px;
+    height: 100px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    font-size: 40px;
+    text-align: center;
+    /* flex-grow: 1; *//* abarca el 100% del contenedor */
+    /* flex-shrink: 0; */
+    flex: 1 1 auto; /* crece proporcionalmente ocupan el 100 del ancho disponible */
+    order: 2;
+}
+
+.c{
+    order: 1; /* ordenar los elementos, prioridad 1 */
+    align-self: start; /* ordenar 1 solo elemento */
+}

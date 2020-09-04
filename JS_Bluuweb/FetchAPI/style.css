@@ -1,0 +1,66 @@
+*{
+    color: white;
+}
+#nombre{
+    color: red;
+    transition: 0.5s;
+}
+
+#nombre:hover{
+    color: forestgreen;
+
+}
+
+
+body{
+    background: black;
+}
+
+#btn{
+    color: black;
+    padding: 10px;
+    background: aqua;
+    border: none;
+    border-radius: 10px;
+}
+
+.arrow{
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    transition: 0.5s all;
+}
+
+.arrow:hover{
+    border: 1px solid red;
+}
+
+.domjs{
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    transition: 0.5s all;
+}
+
+.domjs:hover{
+    border: 1px solid red;
+}
+
+.objetos{
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    transition: 0.5s all;
+}
+
+.objetos:hover{
+    border: 1px solid red;
+}
+
+#apiId{
+    border: 1px solid red;
+}
+
+#tabla{
+    border: 1px solid red;
+}

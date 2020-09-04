@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body" >
+        <h1>Ajax con Vanilla JavaScript - XMLhttpRequest</h1>
+        
+        <div class="container">
+            <button class="button" id="btn">Ajax</button>
+            <h2 id="ajax"></h2>
+            <div class="tablaajax">
+                <button class="button" id="btntabla">JSON</button>
+                <table class="highlight">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Artista</th>
+                        </tr>
+                    </thead>
+                    <tbody id="res">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="moneda">
+                <button class="button" id="btndolar">Dolar</button>
+                <button class="button" id="btnuf">UF</button>
+                <section>
+                    <ul id="resultado"></ul>
+                </section>
+            </div>
+            <div class="eventdelegation">
+                <h2>Event Delegation</h2>
+                <button class="button" id="agregarbtns">Agregar Botones</button>
+                <div class="containerbtns" id="botones">
+                   <!--  <button class="btn1">Boton1</button>
+                    <button class="btn2">Boton2</button>
+                    <button class="btn3">Boton3</button>
+                    <button class="btn4">Boton4</button>
+                    <button class="btn5">Boton5</button> -->
+                </div>
+            </div>
+
+
+
+            <div class="crud">
+
+                <h1>CRUD con LocalStorage y Vanilla Javascript</h1><br>
+                <h3>
+                    <i class="material-icons">
+                    accessibility
+                    </i>
+                    Mi GYM
+                </h3>
+
+                <form action="" id="formulario">
+
+                    <div class="row">
+                    <div class="input-field col s3">
+                        <input placeholder="Actividad" id="actividad" type="text" class="validate">
+                      </div>
+                    </div>
+
+                    <button class="button" type="submit" id="guardar">Guardar</button>
+
+                </form>
+                <div id="listaActividades">
+                    
+                    <div class="alert alert-danger" role="alert">
+                        <i class="material-icons float-left">accessibility</i>
+                        <b>Texto de la actividad</b>  - Estado
+                        <span class="float-right">
+                            <i class="material-icons">
+                                done
+                                </i>
+                                <i class="material-icons">
+                                    delete
+                                    </i>
+                        </span>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

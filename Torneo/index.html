@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Torneo</title>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Torneo</h1>
+            <ul>
+                <li><i class="fas fa-user-plus"><a href="#">Agregar</a></i></li>
+                <li><i class="fas fa-trophy"><a href="#">Duelo</a></i></li>
+                <li><i class="far fa-chart-bar"><a href="#">Estadisticas</a></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Agregar">
+
+            <div class="login-box">
+
+                <h1>Agregar</h1>
+    
+                <div class="textbox">
+    
+                    <i class="fa fa-user" aria-hidden="true"></i>
+    
+                    <input type="text" placeholder="Nombre" name="" value="" id="nombre">
+    
+                </div>
+    
+                <div class="dropdown">
+                    
+                    <p>Plataforma</p>
+
+                    <select id="plataforma" name="cars">
+                        <option value="MyFreecams">MyFreecams</option>
+                        <option value="Chaturbate">Chaturbate</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Pornstar">Pornstar</option>
+                      </select>
+                </div>
+    
+                <button class="btn" id="btnagregar">Agregar</button>
+
+                <button class="btn" id="btneditar">Editar</button>
+    
+    
+            </div>
+
+
+        </section>
+
+        <section class="Duelo">
+
+            <div class="versus" id="versus">
+
+                <h2 class="grid-item" id="m1">M1</h2>
+                <h3 class="grid-item">VS</h3>
+                <h2 class="grid-item" id="m2">M2</h2>
+
+                <button class="grid-item" id="btn-opcion">Opcion 1</button>
+                <h3 class=" grid-item"></h3>
+                <button class="grid-item" id="btn-opcion">Opcion 2</button>
+                
+            </div>
+
+
+        </section>
+
+        <section class="Estadisticas">
+            
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Plataforma</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </tr>
+
+            <tbody id="tabla">
+
+            </tbody>
+
+            </table>
+
+        </section>
+    </main>
+
+
+<script src="app.js"></script>
+
+<script src="https://kit.fontawesome.com/986b23362e.js" crossorigin="anonymous"></script>
+</body>
+</html>
