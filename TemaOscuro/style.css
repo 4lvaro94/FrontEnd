@@ -1,0 +1,46 @@
+body{
+
+    --color-bg: #ddd;
+    --color-texto: #EE6352;
+
+}
+
+body{
+
+    background-color: var(--color-bg);
+
+}
+
+h1{
+    color: var(--color-texto);
+}
+
+p{
+    color: var(--color-texto);
+}
+
+#boton{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+body.dark-theme{
+    --color-bg: rgb(77, 77, 77);
+    --color-texto: #f5d000;
+}
+
+@media (prefers-color-scheme: dark) {
+
+ body{
+    --color-bg: rgb(77, 77, 77);
+    --color-texto: #f5d000;
+}
+
+body.light-theme{
+    --color-bg: #ddd;
+    --color-texto: #EE6352;
+}
+
+}
+

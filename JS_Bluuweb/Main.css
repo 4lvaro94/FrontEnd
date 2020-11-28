@@ -35,7 +35,7 @@ body{
 }
 
 .ejercicio:hover{
-    border: 2px solid black;
+    border: 2px solid #ccb401;
 }
 
 a{
@@ -54,5 +54,5 @@ a{
 }
 
 .ej9{
-    background-image: url(/JS_Bluuweb/Buscador/1.png);
+    background-image: url('./Buscador/1.png');
 }
