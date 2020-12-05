@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
 
     --color-bg: #ddd;
@@ -8,14 +14,25 @@ body{
 body{
 
     background-color: var(--color-bg);
-
+    transition: background-color 1s, color 1s;
 }
 
-h1{
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.modoDos{
+    background-color: seashell;
+}
+
+
+.modoUno h1{
     color: var(--color-texto);
 }
 
-p{
+
+.modoUno p{
     color: var(--color-texto);
 }
 
@@ -43,4 +60,9 @@ body.light-theme{
 }
 
 }
+
+/*!------------------------------- Light/Dark Mode----------------------------------------------  */
+
+
+
 

@@ -205,8 +205,8 @@ switch(y){
 //* for
 
 
-const numeros = [1, 2, 'Hola', 4, 5]
-
+/* const numeros = [1, 2, 'Hola', 4, 5] */
+/* 
 console.log('array',numeros[2])
 
 for (let i = 0; i < numeros.length; i++){
@@ -214,5 +214,76 @@ for (let i = 0; i < numeros.length; i++){
     console.log(numeros[i]);
     
     } 
+ */
 
 
+
+//! --------Funciones------------------
+
+/* function iterar(arg1){
+
+
+    for (let i = 0; i < arg1.length; i++){
+
+    console.log(arg1[i]);
+    
+    } 
+
+}
+
+const numeros = [1, 2, 'Hola', 4, 5]
+const nombres = ['Alvaro', 'Andres','Contreras','Pinto']
+
+iterar(numeros)
+
+iterar(nombres) */
+
+/* function sumar(a, b){
+
+    return a + b;
+
+}
+
+const resultadoSuma1 = sumar(1,2)
+const resultadoSuma2 = sumar(5,6)
+const resultadoSuma3 = sumar(resultadoSuma1,resultadoSuma2)
+
+console.log('resultado', resultadoSuma3) */
+
+
+//* Callback
+
+function sumar(a, b, cb){
+
+    const r = a + b
+
+    cb(r)
+
+}
+
+function Callback(result){
+
+    console.log('resultado', result)
+
+}
+
+/* Callback(6); */
+
+/* sumar(2,3,Callback) */
+
+
+//* Fat arrow
+
+const miFattArrow = (a,b) => a + b
+
+/* const rr = miFattArrow(1,2) */
+
+const otraAF = (a,b) => {
+
+    return a + b
+
+}
+
+const rr = otraAF (1,2)
+
+console.log(rr)
