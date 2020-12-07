@@ -59,3 +59,278 @@ body{
     transform: skewY(-20deg);
 }
 
+
+
+
+/*!---------------------------------ISOMETRIC 3D--------------------------------------*/
+
+.isometric{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.isometric ul{
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.isometric ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.isometric ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+
+.isometric ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+}
+
+
+.isometric ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 30px !important;
+    transition: .2s;
+}
+
+.isometric ul li:hover span{
+    z-index: 1000;
+    transition: .5s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.isometric ul li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.isometric ul li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+.isometric ul li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+.isometric ul li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+.isometric ul li:hover span:nth-child(1){
+    transform: translate(0px, -0px);
+    opacity: 0.2;
+}
+
+
+.isometric ul li:nth-child(1):hover span{
+    background: #3b4999;
+}
+
+.isometric ul li:nth-child(2):hover span{
+    background: #0077b5;
+}
+
+.isometric ul li:nth-child(3):hover span{
+    background: #e4405f;
+}
+
+.isometric ul li:nth-child(4):hover span{
+    background: #25d366;
+}
+
+.isometric ul li:nth-child(5):hover span{
+    background: #CC0000;
+}
+
+
+
+/*!---------------------------------LOGIN--------------------------------------*/
+
+
+.login{
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    background: url(./images/bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    width: calc(100% - 20px);
+    max-width: 500px;
+    background-color:rgba(255, 255, 255, 0.95);
+    padding: 50px 40px;
+    border-radius: 5px;
+}
+
+.login-form h1{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+    color: #111;
+    font-size: 36px;
+}
+
+.textb{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.textb input{
+    width: 100%;
+    height: 70px;
+    border: none;
+    background-color: #ededed;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    padding: 14px 60px 0 10px;
+}
+
+.placeholder{
+    text-transform:  uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 70px;
+    top: 0;
+    left: 20px;
+    color: #9d9d9d;
+    user-select: none;
+    pointer-events: none;
+}
+
+.ver-pass{
+    position: absolute;
+    right: 20px;line-height: 70px;
+    color: #9d9d9d;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.textb input:focus ~ .placeholder,
+.textb input:valid ~ .placeholder{
+    left: 10px;
+    top: -16px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0;
+}
+
+.checkbox input{
+    width: 24px;
+    height: 24px;
+    -webkit-appearance: none;
+    background-color: #ededed;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox .fa-check{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    width: 24px;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.checkbox input:checked{
+    background-color: #bc252a;
+}
+
+.checkbox input:checked + .fa-check{
+    opacity: 1;
+}
+
+.btn{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 40px auto;
+    background-color: #bc252a;
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.btn:hover{
+    opacity: .85;
+}
+
+.login-form a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: .2s linear;
+}
+
+.login-form a:hover{
+    color: #111;
+}
+
+.btn:disabled{
+    background-color: transparent;
+    color: #ddd;
+    border: 2px solid;
+}
+
