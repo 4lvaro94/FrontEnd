@@ -12,12 +12,14 @@ body {
   justify-content: center;
   perspective: 1000px;
 }
+
 .container {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card {
   transform-style: preserve-3d;
   min-height: 80vh;

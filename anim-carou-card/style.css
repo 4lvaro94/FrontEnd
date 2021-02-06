@@ -66,68 +66,7 @@ nav{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px){
 
-    .nav-links{
-        width: 60%;
-    }
-
-    .footer-container{
-        max-width: 600px;
-    }
-
-    .right{
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    .left{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px){
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 67px;
-        background: linear-gradient(to right, #2c3e50, #2980b9);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translate(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 10;
-    }
-
-    .nav-links li{
-        opacity: 0;
-    }
-
-    .burger{
-        display: block;
-        cursor: pointer;
-    }
-
-    .btn{
-        margin: 0;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-}
-
-.nav-active{
-    transform: translate(0%);
-}
 
 @keyframes navLinkFade{
 
@@ -547,4 +486,68 @@ footer{
 .footer-content p{
     margin-left: 49%;
     font-weight: 700;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .nav-links{
+        width: 60%;
+    }
+
+    .footer-container{
+        max-width: 600px;
+    }
+
+    .right{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 67px;
+        background: linear-gradient(to right, #2c3e50, #2980b9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+.nav-active{
+    transform: translate(0%);
 }

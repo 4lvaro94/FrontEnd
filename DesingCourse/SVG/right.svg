@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159.125" height="383.094" viewBox="0 0 159.125 383.094">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1223.34" y1="210.92" x2="840.875" y2="431.736" gradientUnits="userSpaceOnUse">
+      <stop offset="0.234" stop-color="#6762d8"/>
+      <stop offset="0.455" stop-color="#6762d8"/>
+      <stop offset="0.683" stop-color="#39b6f6"/>
+      <stop offset="0.9" stop-color="#39b6f6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path id="Polígono_1" data-name="Polígono 1" class="cls-1" d="M1085.66,503.658q-132.188,37.392-208.6-76.777t8.558-222.121q84.969-107.95,213.893-60.5t123.64,184.729Q1217.855,466.268,1085.66,503.658Z" transform="translate(-840.875 -129.781)"/>
+</svg>

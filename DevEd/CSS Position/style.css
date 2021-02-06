@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(228, 228, 228);
+}
+
+body{
+    height: 200vh;
+    background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(236, 236, 236);
+    margin: 20px auto;
+    position: relative;
+}
+
+.item1, .item2{
+    width: 150px;
+    height: 150px;
+}
+
+.item1{
+    background-color:  darkcyan;
+    position: fixed;
+    left: 50px;
+}
+
+.item2{
+    background-color:  darkred;
+}
+
+nav{
+    background: darkred;
+    position: sticky;
+    top: 0;
+}

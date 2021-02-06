@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.heroimg{
+    background-image: url("./bg.svg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#left{
+    position: absolute;
+    top: 60%;
+}
+
+#right{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 1;
+}
+
+
+nav{
+    padding: 50px;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: black;
+    padding: 0px 30px;
+}
+
+#logo{
+    font-size: 2em;
+}
+
+.container{
+    text-align: center;
+    width: 60%;
+    margin: 110px auto;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+.container p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+

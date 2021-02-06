@@ -1,0 +1,67 @@
+body {
+  background-color: #466BDA;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  background: white;
+  padding: 1.5em;
+  border-radius: 2em;
+  position: relative;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  -webkit-box-shadow: -30px 30px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -30px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.phone:before {
+  content: " ";
+  position: absolute;
+  background-color: #466BDA;
+  border-radius: 1em;
+  padding: .5em;
+  width: 33%;
+  top: -5px;
+  left: 30%;
+}
+
+.square-group {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "square square" "square square";
+}
+
+.square-group .square {
+  padding: 3em;
+  margin: .6em;
+  border-radius: .8em;
+  background-color: #466BDA;
+}
+
+.skeleton-title, .skeleton-title2 {
+  padding: .6em;
+  margin: 1em .3em;
+  border-radius: .8em;
+  background-color: #466BDA;
+}
+
+.skeleton-title2 {
+  width: 60%;
+}
+
+.circle-group {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "circle circle circle" "circle circle circle";
+}
+
+.circle-group .square {
+  padding: 2em;
+  margin: .6em;
+  border-radius: 50%;
+  background-color: #466BDA;
+}
+/*# sourceMappingURL=style.css.map */
